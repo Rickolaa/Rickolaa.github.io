@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierrick Drouet De La Thibauderie - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#"><span class="primary-text">Pierrick</span> <span class="full-name">Drouet De La Thibauderie</span></a>
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#education">Formation</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </nav>
+                <div class="mobile-nav-toggle">
+                    <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Changer de thème">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <nav id="mobile-nav" class="mobile-nav">
+                <ul>
+                    <li><a href="#about" class="mobile-nav-link">À propos</a></li>
+                    <li><a href="#skills" class="mobile-nav-link">Compétences</a></li>
+                    <li><a href="#experience" class="mobile-nav-link">Expérience</a></li>
+                    <li><a href="#education" class="mobile-nav-link">Formation</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projets</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section À propos -->
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="profile-image">
+                    <div class="profile-placeholder"><img src="assets/pp.png"></div>
+                </div>
+                <h1>Pierrick Drouet De La Thibauderie</h1>
+                <p class="subtitle">Développeur passionné spécialisé dans le développement d'applications</p>
+                
+                <div class="languages-showcase">
+                    <div class="language-item">
+                        <div class="language-flag">🇫🇷</div>
+                        <div class="language-details">
+                            <h3>Français</h3>
+                            <p>Langue maternelle</p>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-flag">🇬🇧</div>
+                        <div class="language-details">
+                            <h3>Anglais</h3>
+                            <p>Niveau B2</p>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-flag">🇪🇸</div>
+                        <div class="language-details">
+                            <h3>Espagnol</h3>
+                            <p>Niveau B1</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="assets/CV_Pierrick_DROUET_DE_LA_THIBAUDERIE_IUT Orsay.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/pierrick-drouet-de-la-thibauderie-5a377b330" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com//Rickolaa" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Compétences</h2>
+                    <p>Mes compétences techniques acquises à travers ma formation et mes projets personnels.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Langages de programmation</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="badge">C++</span>
+                            <span class="badge">C#</span>
+                            <span class="badge">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-globe"></i>
+                            <h3>Développement web</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Bases de données</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="badge">Modèles conceptuels</span>
+                            <span class="badge">Création de BDD</span>
+                            <span class="badge">Requêtes SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Architecture</h3>
+                        </div>
+                        <div class="card-content">
+                            <span class="badge">Architecture des Ordinateurs</span>
+                            <span class="badge">Communication et fonctionnement bas niveau</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expérience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Expérience professionnelle</h2>
+                    <p>Mon parcours professionnel et mes expériences dans divers domaines.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Stage d'observation</h3>
+                                <p class="card-subtitle">Richemont Customer Service</p>
+                            </div>
+                            <span class="badge badge-outline">2023</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Diagnostique des montres, réception et renvoi des montres et bijoux à la logistique, réparation des montres.</p>
+                        </div>
+                    </div>
+
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Ostréiculture</h3>
+                            </div>
+                            <span class="badge badge-outline">2023</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Expérience dans le domaine de l'ostréiculture.</p>
+                        </div>
+                    </div>
+
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Engagement associatif</h3>
+                                <p class="card-subtitle">Bénévolat au Secours Populaire, Romainville (93)</p>
+                            </div>
+                            <span class="badge badge-outline">2023-2024</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Collecte de nourriture, accueil des personnes en difficulté, préparation de colis de nourriture. Assistance et support informatique.</p>
+                        </div>
+                    </div>
+
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Encadrement</h3>
+                                <p class="card-subtitle">Club d'escalade ELP de Bagnolet</p>
+                            </div>
+                            <span class="badge badge-outline">2023-2025</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Encadrement d'activités au sein du club d'escalade et vérification de la sécurité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formation -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Formation</h2>
+                    <p>Mon parcours académique et mes qualifications.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>BUT Informatique</h3>
+                                <p class="card-subtitle">Université Paris Saclay</p>
+                            </div>
+                            <span class="badge badge-outline">2024-2027</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Parcours A : développement d'applications</p>
+                            <p class="text-muted">Sept 2025 : BUT Orsay 2 parcours A développement</p>
+                        </div>
+                    </div>
+
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Baccalauréat série général</h3>
+                                <p class="card-subtitle">Lycée Charles Péguy Paris</p>
+                            </div>
+                            <span class="badge badge-outline">2024</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Mention Assez Bien</p>
+                            <p class="text-muted">Spécialité Mathématiques/Physique-Chimie, Filière Anglais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projets</h2>
+                    <p>Mes réalisations et projets informatiques.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="card project-card">
+                        <div>
+                            <div class="card-header">
+                                <div class="card-icon-title">
+                                    <i class="fas fa-gamepad"></i>
+                                    <h3>Développement d'un jeu vidéo</h3>
+                                </div>
+                                <p class="card-subtitle">2024-2025</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Implémentation d'un jeu d'Arcade de type PACMAN en C++. Gestion de l'interface graphique.</p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Environ 30H</p>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div>
+                            <div class="card-header">
+                                <div class="card-icon-title">
+                                    <i class="fas fa-globe"></i>
+                                    <h3>Site Web</h3>
+                                </div>
+                                <p class="card-subtitle">2024</p>
+                            </div>
+                            <div class="card-content">
+                                <p>Création d'un site Web vitrine de promotion d'une entreprise fictive.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p>Environ 20H</p>
+                        </div>
+                    </div>
+
+                    <div class="card project-card">
+                        <div>
+                            <div class="card-header">
+                                <div class="card-icon-title">
+                                    <i class="fas fa-database"></i>
+                                    <h3>Base de Données</h3>
+                                </div>
+                                <p class="card-subtitle">2024</p>
+                            </div>
+                            <div class="card-content">
+                                <p>Modélisation, puis création d'une base de données sur un Raspberry PI.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p>Environ 5H</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p>N'hésitez pas à me contacter pour discuter de projets ou d'opportunités.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mes coordonnées</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+33 6 02 42 06 13</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>pierrick.drouetdelathibauderie@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Romainville, 93230</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/pierrick-drouet-de-la-thibauderie-5a377b330" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-car"></i>
+                                <span>Permis B et véhiculé</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">
+                &copy; <span id="current-year"></span> Pierrick Drouet De La Thibauderie. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
